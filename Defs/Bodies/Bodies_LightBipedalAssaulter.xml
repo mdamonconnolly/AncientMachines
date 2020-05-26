@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <BodyDef>
+        <defName>AM_LightBipedalAssaulter</defName>
+        <label>light bipedal walker</label>
+
+        <corePart>
+
+            <!-- Body -->
+            <def>Body</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+                <!-- Internals -->
+                <li>
+                    <def>Spine</def>
+                    <customLabel>spine</customLabel>
+                    <coverage>0.04</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Stomach</def>
+                    <customLabel>stomach</customLabel>
+                    <coverage>0.03</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Heart</def>
+                    <customLabel>heart</customLabel>
+                    <coverage>0.03</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>AM_AirIntake</def>
+                    <customLabel>left air intake</customLabel>
+                    <coverage>0.03</coverage>
+                    <depth>Outside</depth>
+                </li>
+
+                <li>
+                    <def>AM_AirIntake</def>
+                    <customLabel>right air intake</customLabel>
+                    <coverage>0.03</coverage>
+                    <depth>Outside</depth>
+                </li>
+
+                <li>
+                    <def>AM_ArmorShell</def>
+                    <coverage>0.2</coverage>
+                    <depth>Outside</depth>
+                </li>
+
+                <li>
+                    <def>Neck</def>
+                    <coverage>0.30</coverage>
+                    <height>Top</height>
+                    <parts>
+
+                        <li>
+                            <def>Head</def>
+                            <coverage>0.95</coverage>
+                            <groups>
+                                <li>AM_HeadAttackTool</li>
+                            </groups>
+                            <parts>
+                            
+                                <li>
+                                    <def>Skull</def>
+                                    <customLabel>exo-skull</customLabel>
+                                    <coverage>0.7</coverage>
+                                    <depth>Outside</depth>
+                                    <parts>
+                                        <li>
+                                            <def>AM_GelCore</def>
+                                            <coverage>0.8</coverage>
+                                            <depth>Inside</depth>
+                                        </li>
+                                    </parts>
+                                </li>
+
+                                <li>
+                                    <def>AM_PlateSensor</def>
+                                    <coverage>0.15</coverage>
+                                    <depth>Outside</depth>
+                                </li>
+
+                                <li>
+                                    <def>AnimalJaw</def>
+                                    <coverage>0.1</coverage>
+                                </li>
+
+                            </parts>
+
+                        </li>
+
+                    </parts>
+                </li>
+
+                <!-- Upper Body -->
+                <li>
+                    <def>AM_EmbergasCannon</def>
+                    <customLabel>left embergas cannon</customLabel>
+                    <coverage>0.05</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AM_GunAttackTool</li>
+                    </groups>
+                    
+                </li>
+
+                <li>
+                    <def>AM_EmbergasCannon</def>
+                    <customLabel>right embergas cannon</customLabel>
+                    <coverage>0.05</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AM_GunAttackTool</li>
+                    </groups>
+                </li>
+
+                <!-- Lower Body -->
+
+                <li>
+                    <def>Leg</def>
+                    <customLabel>left leg</customLabel>
+                    <coverage>0.1</coverage>
+                    <height>Bottom</height>
+                    <parts>
+                        <li>
+                            <def>Foot</def>
+                            <customLabel>left foot</customLabel>
+                            <coverage>0.5</coverage>
+                        </li>
+                    </parts>
+                </li>
+
+                <li>
+                    <def>Leg</def>
+                    <customLabel>right leg</customLabel>
+                    <coverage>0.1</coverage>
+                    <height>Bottom</height>
+                    <parts>
+                        <li>
+                            <def>Foot</def>
+                            <customLabel>right foot</customLabel>
+                            <coverage>0.5</coverage>
+                        </li>
+                    </parts>
+                </li>
+
+            </parts>
+
+        </corePart>
+
+    </BodyDef>
+</Defs>

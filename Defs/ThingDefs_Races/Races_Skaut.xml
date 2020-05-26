@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="AnimalThingBase">
+        
+        <defName>AM_Skaut</defName>
+        <label>skaut</label>
+        <description>The Skaut is a floaty boi</description>
+
+        <statBases>
+            <MoveSpeed>5</MoveSpeed>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <ComfyTemperatureMax>45</ComfyTemperatureMax>
+            <MarketValue>150</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            <ArmorRating_Heat>-100</ArmorRating_Heat>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </statBases>
+
+        <!-- TODO: Add beacon/raid calling comp -->
+
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <body>AM_Floater</body>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHealthScale>1.0</baseHealthScale>
+            <baseHungerRate>0.25</baseHungerRate>
+            <foodType>DendrovoreAnimal,AnimalProduct</foodType>
+            <hasGenders>false</hasGenders>
+            <wildness>0.85</wildness>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+            <trainability>Intermediate</trainability>
+            <lifeExpectancy>200</lifeExpectancy>
+            <mateMtbHours>10000</mateMtbHours>
+            <gestationPeriodDays>10000</gestationPeriodDays>
+
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.8</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.0</minAge>
+
+                    <!--Add Custom Sounds-->
+                    <soundWounded>Pawn_Melee_BigBash_HitPawn</soundWounded>
+                    <soundDeath>Pawn_Melee_BigBash_HitPawn</soundDeath>
+                    <soundCall>Pawn_Melee_BigBash_HitPawn</soundCall>
+                    <soundAngry>Pawn_Melee_BigBash_HitPawn</soundAngry>
+                </li>
+            </lifeStageAges>
+
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
+            <wildBiomes>
+                <BorealForest>0.5</BorealForest>
+                <Tundra>0.05</Tundra>
+                <ColdBog>0.05</ColdBog>
+                <TemperateSwamp>0.5</TemperateSwamp>
+                <TemperateForest>0.5</TemperateForest>
+                <TropicalSwamp>0.5</TropicalSwamp>
+                <AridShrubland>0.5</AridShrubland>
+            </wildBiomes>
+        </race>
+
+        <butcherProducts>
+            <Steel>100</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <AM_AncientAnimalMeat>8</AM_AncientAnimalMeat>
+            <AM_GelCore>1</AM_GelCore>
+        </butcherProducts>
+
+        <tradeTags>
+            <li>ExoticAnimal</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+    
+        <defName>AM_Skaut</defName>
+        <label>skaut</label>
+        <race>AM_Skaut</race>
+        <combatPower>50</combatPower>
+
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Skaut</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0, 0, -0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Hybrids/DessicatedSkaut</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Skaut</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0, 0, -0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Hybrids/DessicatedSkaut</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Skaut</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0, 0, -0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Hybrids/DessicatedSkaut</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+
+    </PawnKindDef>
+
+</Defs>

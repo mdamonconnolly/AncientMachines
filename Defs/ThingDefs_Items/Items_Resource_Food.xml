@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef Name="AM_MeatMealBase" Abstract="True">
+
+        <thingClass>ThingWithComps</thingClass>
+        <!-- Correct? Looks kinda strange -->
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+
+        <!-- Stats Bases -->
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>0</Beauty>
+            <Mass>0.44</Mass>
+            <DeteriorationRate>10</DeteriorationRate>
+        </statBases>
+
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>10</stackLimit>
+        <!-- TODO: Does this need to be loaded before stackXXL? Add this to the about? -->
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>FoodMeals</li>
+        </thingCategories>
+        <alwaysHaulable>true</alwaysHaulable>
+
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Ingredients" />
+            <li Class="CompProperties_FoodPoisonable" />
+        </comps>
+
+        <pathCost>15</pathCost>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <uiIconForStackCount>1</uiIconForStackCount>
+
+        <ingestible>
+            <foodType>Meat</foodType>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+        </ingestible>
+
+    </ThingDef>
+
+
+    <ThingDef ParentName="AM_MeatMealBase" Name="AM_MeatMealRottable" Abstract="True">
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>9</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_MeatMealRottable">
+        <defName>AM_AncientAnimalMeat</defName>
+        <label>ancient animal meat</label>
+        <description>The meat of an ancient animal.</description>
+        <graphicData>
+            <texPath>Things/Items/AncientAnimalMeat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <!-- Stat Bases -->
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <Nutrition>0.8</Nutrition>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <tasteThought>AM_AteDelicacy</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <BodyDef>
+        <defName>AM_Floater</defName>
+        <label>floater</label>
+
+        <corePart>
+
+            <def>Body</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+
+                <!-- Organs Cage -->
+                <li>
+                    <def>AM_ArmorShell</def>
+                    <customLabel>lower shell</customLabel>
+                    <coverage>0.45</coverage>
+                    <depth>Outside</depth>
+                    <parts>
+                        <li>
+                            <def>Stomach</def>
+                            <customLabel>stomach</customLabel>
+                            <coverage>0.12</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>Lung</def>
+                            <customLabel>right lung</customLabel>
+                            <coverage>0.12</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>Lung</def>
+                            <customLabel>left lung</customLabel>
+                            <coverage>0.12</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>Heart</def>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>Kidney</def>
+                            <coverage>0.12</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>Liver</def>
+                            <coverage>0.12</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>AM_AirThruster</def>
+                            <customLabel>left thruster</customLabel>
+                            <coverage>0.13</coverage>
+                            <depth>Outside</depth>
+                        </li>
+
+                        <li>
+                            <def>AM_AirThruster</def>
+                            <customLabel>right thruster</customLabel>
+                            <coverage>0.13</coverage>
+                            <depth>Outside</depth>
+                        </li>
+                    </parts>
+                </li>
+
+                <!-- Robotics Cage -->
+                <li>
+                    <def>AM_ArmorShell</def>
+                    <customLabel>upper shell</customLabel>
+                    <coverage>0.45</coverage>
+                    <depth>Outside</depth>
+                    <parts>
+                    
+                        <li>
+                            <def>AM_GelCore</def>
+                            <coverage>0.2</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>AM_PlateSensor</def>
+                            <coverage>0.5</coverage>
+                            <depth>Inside</depth>
+                        </li>
+
+                        <li>
+                            <def>AM_FeedingTube</def>
+                            <coverage>0.1</coverage>
+                            <depth>Outside</depth>
+                        </li>
+
+                        <li>
+                            <def>AM_Beacon</def>
+                            <coverage>0.1</coverage>
+                            <depth>Outside</depth>
+                        </li>
+
+                    </parts>
+                </li>
+
+            </parts>
+
+        </corePart>
+    </BodyDef>
+</Defs>

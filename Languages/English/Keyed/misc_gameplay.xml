@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+    <!-- Incidents -->
+    <LetterLabelStrangeChunk>Strange Chunk</LetterLabelStrangeChunk>
+    <LetterStrangeChunk>A strange chunk has been spotted sticking out of the ground!\n\nDigging this up may yeild some great resources!... Or maybe something more sinister...</LetterStrangeChunk>
+    <LetterLabelLostMarapol>Lost Marapol Enters</LetterLabelLostMarapol>
+    <LetterLostMarapol>An ancient marapol hybrid has wandered into the area. Being a hauler, it may still have something onboard!</LetterLostMarapol>
+
+    <!-- tasks -->
+    <AM_Dig>Dig</AM_Dig>
+
+</LanguageData>

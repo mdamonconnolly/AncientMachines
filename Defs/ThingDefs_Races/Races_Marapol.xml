@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!-- Animalthingbase? or do i need to create a new base? -->
+    <ThingDef ParentName="AnimalThingBase">
+
+        <!-- Base Details -->
+        <defName>AM_Marapol</defName>
+        <label>marapol</label>
+        <description>The Marapol is an ancient hybrid mech. Fitted with extremely heavy armor, though mostly harmless this mech takes a lot of fire to kill.</description>
+
+        <!-- Stats -->
+        <statBases>
+            <MoveSpeed>2</MoveSpeed>
+            <ComfyTemperatureMin>-38</ComfyTemperatureMin>
+            <ComfyTemperatureMax>64</ComfyTemperatureMax>
+            <MarketValue>250</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            <ArmorRating_Heat>-100</ArmorRating_Heat>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </statBases>
+
+        <!-- Tools -->
+        <tools>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>AM_HoofAttackTool</linkedBodyPartsGroup>
+            </li>
+
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>AM_HoofAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+
+        <!-- TODO: Impliment defense cannon -->
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>1</accuracyShort>
+                <accuracyMedium>1</accuracyMedium>
+                <accuracyLong>1</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>AM_EmbergasProjectile</defaultProjectile>
+                <warmupTime>3</warmupTime>
+                <burstShotCount>5</burstShotCount>
+                <minRange>1</minRange>
+                <range>20</range>
+                <forcedMissRadius>2</forcedMissRadius>
+                <soundCast>A</soundCast>
+                <muzzleFlashScale>1</muzzleFlashScale>
+                <commonality>1.2</commonality>
+            </li>
+        </verbs>
+
+        <!-- Do i need comps? What are comps? -->
+
+        <!-- Race -->
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <body>AM_ArmoredWalker</body>
+            <baseBodySize>4.0</baseBodySize>
+            <baseHealthScale>3.0</baseHealthScale>
+            <baseHungerRate>0.45</baseHungerRate>
+            <foodType>VegetarianRoughAnimal,DendrovoreAnimal,AnimalProduct</foodType>
+            <hasGenders>false</hasGenders>
+            <wildness>0.85</wildness>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+            <trainability>Intermediate</trainability>
+            <lifeExpectancy>200</lifeExpectancy>
+            <mateMtbHours>10000</mateMtbHours>
+            <gestationPeriodDays>10000</gestationPeriodDays>
+
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.8</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.0</minAge>
+                    <!-- Add sounds? Wildpod as example -->
+                    <soundWounded>Pawn_Melee_BigBash_HitPawn</soundWounded>
+                    <soundDeath>Pawn_Melee_BigBash_HitPawn</soundDeath>
+                    <soundCall>Pawn_Melee_BigBash_HitPawn</soundCall>
+                    <soundAngry>Pawn_Melee_BigBash_HitPawn</soundAngry>
+                </li>
+            </lifeStageAges>
+
+            <!-- Add hit sounds too, wildpod example -->
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
+            <wildBiomes>
+                <BorealForest>0.2</BorealForest>
+                <Tundra>0.05</Tundra>
+                <ColdBog>0.05</ColdBog>
+                <TemperateSwamp>0.08</TemperateSwamp>
+                <TropicalSwamp>0.08</TropicalSwamp>
+                <TemperateForest>0.1</TemperateForest>
+                <AridShrubland>0.07</AridShrubland>
+            </wildBiomes>
+        </race>
+
+        <butcherProducts>
+            <Steel>160</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <AM_AncientAnimalMeat>12</AM_AncientAnimalMeat>
+            <AM_GelCore>1</AM_GelCore>
+        </butcherProducts>
+
+        <tradeTags>
+            <li>ExoticAnimal</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+    <PawnKindDef ParentName="AnimalKindBase">
+
+        <defName>AM_Marapol</defName>
+        <label>marapol</label>
+        <race>AM_Marapol</race>
+        <combatPower>200</combatPower>
+
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Marapol</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0, 0, -0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Hybrids/DessicatedMarapol</texPath>
+                    <drawSize>4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Marapol</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0, 0, -0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Hybrids/DessicatedMarapol</texPath>
+                    <drawSize>4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Marapol</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0, 0, -0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Hybrids/DessicatedMarapol</texPath>
+                    <drawSize>4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+
+    </PawnKindDef>
+
+</Defs>

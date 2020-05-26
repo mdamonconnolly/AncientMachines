@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="BaseMechanoidWalker">
+        <defName>AM_Haymaker</defName>
+        <label>haymaker</label>
+        <description>Placeholder description.</description>
+
+        <!-- Stats -->
+        <statBases>
+            <MoveSpeed>7</MoveSpeed>
+            <ComfyTemperatureMin>-34</ComfyTemperatureMin>
+            <ComfyTemperatureMax>48</ComfyTemperatureMax>
+            <MarketValue>250</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <ArmorRating_Blunt>3</ArmorRating_Blunt>
+            <ArmorRating_Heat>-100</ArmorRating_Heat>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </statBases>
+
+        <!-- Tools -->
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>AM_HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+
+            <li>
+                <label>left gun</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1</cooldownTime>
+                <linkedBodyPartsGroup>AM_GunAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.3</chanceFactor>
+            </li>
+
+            <li>
+                <label>right gun</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1</cooldownTime>
+                <linkedBodyPartsGroup>AM_GunAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.3</chanceFactor>
+            </li>
+            <!-- Copy from Galatross and feralisk for cannons -->
+        </tools>
+
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>1</accuracyShort>
+                <accuracyMedium>1</accuracyMedium>
+                <accuracyLong>1</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>AM_EmbergasProjectile</defaultProjectile>
+                <warmupTime>0.45</warmupTime>
+                <burstShotCount>2</burstShotCount>
+                <forcedMissRadius>2</forcedMissRadius>
+                <minRange>2</minRange>
+                <range>12</range>
+                <!-- <soundCast> -->
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <commonality>1</commonality>
+            </li>
+        </verbs>
+
+        <race>
+            <body>AM_LightBipedalAssaulter</body>
+            <baseHealthScale>1.5</baseHealthScale>
+
+            <!-- Custom Sounds? -->
+            <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="BaseMechanoidKind">
+        <defName>AM_Haymaker</defName>
+        <label>haymaker</label>
+        <race>AM_Haymaker</race>
+        <combatPower>100</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Haymaker</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+
+        <weaponMoney>0~0</weaponMoney>
+        <defendPointRadius>0</defendPointRadius>
+        <weaponTags>
+        </weaponTags>
+    </PawnKindDef>
+</Defs>

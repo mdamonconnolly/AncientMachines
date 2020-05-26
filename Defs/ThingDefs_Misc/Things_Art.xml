@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="BuildingBase" Name="AM_SculptureBase" Abstract="True">
+        <thingClass>Building_Art</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <useHitPoints>true</useHitPoints>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsArt</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+
+        <!-- Stat Bases -->
+        <statBases>
+            <Flammability>1.0</Flammability>
+            <SellPriceFactor>1.20</SellPriceFactor>
+        </statBases>
+
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtSculpture</nameMaker>
+                <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+                <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+            </li>
+        </comps>
+
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <tradeTags>
+            <li>Art</li>
+        </tradeTags>
+
+        <!--
+        <recipeMaker>
+        </recipeMaker>
+        -->
+
+    </ThingDef>
+
+
+    <ThingDef ParentName="AM_SculptureBase">
+        <defName>AM_AncientSculpture</defName>
+        <label>ancient sculpture</label>
+        <description>This ancient sculpture is decorated in a wealth of information from a time long past.</description>
+        <castEdgeShadows>true</castEdgeShadows>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Items/AncientDecoration</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <Beauty>120</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>50</costStuffCount>
+    </ThingDef>
+
+
+
+</Defs>

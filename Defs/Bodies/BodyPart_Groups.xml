@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <BodyPartGroupDef>
+        <defName>AM_HeadAttackTool</defName>
+        <label>head</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>AM_HoofAttackTool</defName>
+        <label>hoof</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>AM_GunAttackTool</defName>
+        <label>gun</label>
+    </BodyPartGroupDef>
+
+</Defs>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!-- Walker Parts -->
+
+    <BodyPartDef>
+        <defName>AM_PlateSensor</defName>
+        <label>plate sensor</label>
+        <hitPoints>50</hitPoints>
+        <frostbiteVulnerability>0</frostbiteVulnerability>
+        <skinCovered>false</skinCovered>
+        <socketed>false</socketed>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>SightSource</li>
+            <li>HearingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>AM_GelCore</defName>
+        <label>gel core</label>
+        <hitPoints>30</hitPoints>
+        <bleedRate>5</bleedRate>
+        <skinCovered>false</skinCovered>
+        <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+        <tags>
+            <li>ConsciousnessSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>AM_ArmorShell</defName>
+        <label>armor shell</label>
+        <hitPoints>80</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+        <frostbiteVulnerability>0</frostbiteVulnerability>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>AM_AirIntake</defName>
+        <label>air intake</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+        <tags>
+            <li>BreathingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <!-- Float Parts -->
+    <BodyPartDef>
+        <defName>AM_AirThruster</defName>
+        <label>air thruster</label>
+        <hitPoints>40</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>AM_FeedingTube</defName>
+        <label>feeding tube</label>
+        <hitPoints>10</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+        <tags>
+            <li>EatingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>AM_Beacon</defName>
+        <label>message beacon</label>
+        <hitPoints>20</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+        <frostbiteVulnerability>1</frostbiteVulnerability>
+        <tags>
+            <li>TalkingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <!-- Weapons -->
+    <BodyPartDef>
+        <defName>AM_EmbergasCannon</defName>
+        <label>embergas cannon</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    </BodyPartDef>
+
+</Defs>

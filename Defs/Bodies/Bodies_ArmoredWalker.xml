@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <BodyDef>
+
+        <defName>AM_ArmoredWalker</defName>
+        <label>armored walker</label>
+
+        <corePart>
+
+            <!-- Body -->
+            <def>Body</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+            
+                <!-- Internals -->
+                <li>
+                    <def>Spine</def>
+                    <customLabel>spine</customLabel>
+                    <coverage>0.03</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Stomach</def>
+                    <customLabel>stomach</customLabel>
+                    <coverage>0.05</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Heart</def>
+                    <coverage>0.02</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Lung</def>
+                    <customLabel>left lung</customLabel>
+                    <coverage>0.02</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Lung</def>
+                    <customLabel>right lung</customLabel>
+                    <coverage>0.02</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Kidney</def>
+                    <customLabel>left kidney</customLabel>
+                    <coverage>0.02</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Kidney</def>
+                    <customLabel>right kidney</customLabel>
+                    <coverage>0.02</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <li>
+                    <def>Liver</def>
+                    <coverage>0.02</coverage>
+                    <depth>Inside</depth>
+                </li>
+
+                <!-- End of Internals -->
+
+                <li>
+                    <def>AM_ArmorShell</def>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                </li>
+
+                <li>
+                    <def>AM_EmbergasCannon</def>
+                    <coverage>0.02</coverage>
+                    <depth>Outside</depth>
+                </li>
+
+                <!-- Begin Head -->
+                <li>
+                    <def>Neck</def>
+                    <coverage>0.20</coverage>
+                    <height>Top</height>
+                    
+                    <parts>
+                    
+                        <li>
+                            <def>Head</def>
+                            <coverage>0.85</coverage>
+                            <groups>
+                                <li>HeadAttackTool</li>
+                            </groups>
+                            <parts>
+                            
+                                <li>
+                                    <def>Skull</def>
+                                    <customLabel>brain cage</customLabel>
+                                    <coverage>0.3</coverage>
+                                    <depth>Inside</depth>
+                                    <parts>
+                                        <li>
+                                            <def>AM_GelCore</def>
+                                            <coverage>0.85</coverage>
+                                            <depth>Inside</depth>
+                                        </li>
+                                    </parts>
+                                </li>
+
+                                <li>
+                                    <def>AM_PlateSensor</def>
+                                    <coverage>0.6</coverage>
+                                    <depth>Outside</depth>
+                                </li>
+
+                                <li>
+                                    <def>AnimalJaw</def>
+                                    <coverage>0.05</coverage>
+                                </li>
+
+                            </parts>
+                        </li>
+
+                    </parts>
+                </li>
+                <!-- End of Head -->
+                
+                <!-- Legs -->
+                <li>
+                    <def>Leg</def>
+                    <customLabel>front left leg</customLabel>
+                    <coverage>0.11</coverage>
+                    <height>Bottom</height>
+                    <parts>
+                        <li>
+                            <def>Hoof</def>
+                            <customLabel>front left hoof</customLabel>
+                            <coverage>0.15</coverage>
+                            <groups>
+                                <li>AM_HoofAttackTool</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+
+                <li>
+                    <def>Leg</def>
+                    <customLabel>front right leg</customLabel>
+                    <coverage>0.11</coverage>
+                    <height>Bottom</height>
+                    <parts>
+                        <li>
+                            <def>Hoof</def>
+                            <customLabel>front right hoof</customLabel>
+                            <coverage>0.15</coverage>
+                            <groups>
+                                <li>AM_HoofAttackTool</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+
+                <li>
+                    <def>Leg</def>
+                    <customLabel>rear left leg</customLabel>
+                    <coverage>0.11</coverage>
+                    <height>Bottom</height>
+                    <parts>
+                        <li>
+                            <def>Hoof</def>
+                            <customLabel>rear left hoof</customLabel>
+                            <coverage>0.15</coverage>
+                        </li>
+                    </parts>
+                </li>
+
+                <li>
+                    <def>Leg</def>
+                    <customLabel>rear right leg</customLabel>
+                    <coverage>0.11</coverage>
+                    <height>Bottom</height>
+                    <parts>
+                        <li>
+                            <def>Hoof</def>
+                            <customLabel>rear right hoof</customLabel>
+                            <coverage>0.15</coverage>
+                        </li>
+                    </parts>
+                </li>
+
+            </parts>
+        
+        </corePart>
+
+    </BodyDef>
+
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<modMetaData>
+    <name>Ancient Machines</name>
+    <author>Damon Connolly</author>
+    <supportedVersions>
+        <li>1.0</li>
+        <li>1.1</li>
+    </supportedVersions>
+    <packageId>DamonConnolly.AncientMachines</packageId>
+
+    <description>
+        v0.19
+        This mod adds a range of hybrid animal-mechs, plus behaviours and items.
+
+        Long ago, before humans were around, maybe even long before the mechanoids, there were races of people that used mech parts to control animals and use them to their advantage in development, medicine and even war. Between psychic events and deep drilling, the constant disturbances have caused these ancient beasts to start waking up but with their masters long dead, it's hard to know whose side they are on!
+
+
+
+        &lt;size=16&gt;Current State&lt;/size&gt;
+        Currently the mod adds some very rarely appearing creatures that don't really behave like they should, and some items and events. Its in a very broken state. Do not play it. It doesn't really add enough to warrant playing for any reason other than testing purposes.
+    </description>
+</modMetaData>

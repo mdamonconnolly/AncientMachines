@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>AM_GelCore</defName>
+        <label>Gel Core</label>
+        <description>A wet-ware AI core from an ancient beast.</description>
+
+        <graphicData>
+            <texPath>Things/Items/GelCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>10</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+
+        <!-- Stats Base -->
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <MarketValue>58</MarketValue>
+            <Mass>0.3</Mass>
+            <Flammability>0.8</Flammability>
+            <DeteriorationRate>4.0</DeteriorationRate>
+        </statBases>
+
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

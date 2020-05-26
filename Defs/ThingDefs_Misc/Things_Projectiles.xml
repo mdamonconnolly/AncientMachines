@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef ParentName="BaseBullet">
+        <defName>AM_EmbergasProjectile</defName>
+        <label>embergas projectile</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectiles/AM_EmbergasProjectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <explosionRadius>1</explosionRadius>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

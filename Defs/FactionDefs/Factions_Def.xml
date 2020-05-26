@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <FactionDef>
+        <defName>AM_Ancients</defName>
+        <label>ancients</label>
+        <pawnSingular>ancient creature</pawnSingular>
+        <pawnsPlural>ancient creatures</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart> <!-- TODO: Find out if this should be 0 if their arrival is triggered by player action -->
+        <fixedName>ancients</fixedName>
+        <factionIconPath>World/WorldObjects/Expanding/Sites/Manhunters</factionIconPath> <!-- TODO: make custom icon -->
+        <raidCommonalityFromPointsCurve> <!-- TODO: Find out what this is -->
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <humanlikeFaction>false</humanlikeFaction>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid> <!-- TODO: learn about -->
+        <techLevel>Animal</techLevel>
+        <permanentEnemy>false</permanentEnemy>
+        <settlementTexturePath>World/WorldObjects/defaultSettlement</settlementTexturePath> <!-- Create Custom Icon -->
+        <allowedArrivalTemperatureRange>
+            <min>-30</min>
+            <max>60</max>
+        </allowedArrivalTemperatureRange>
+    </FactionDef>
+
+</Defs>

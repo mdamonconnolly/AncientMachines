@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef>
+        <defName>AM_AncientBuriedChunk</defName>
+        <label>Strange Buried Chunk</label>
+        <description>Something seems to be buried in the ground here!</description>
+        <category>Item</category>
+        <thingClass>ThingWithComps</thingClass>
+        <scatterableOnMapGen>true</scatterableOnMapGen>
+        <tickerType>Normal</tickerType>
+
+        <graphicData>
+            <texPath>Things/Misc/AncientBuriedChunk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+            <shadowData>
+                <volume>(0.8, 0.6, 0.8)</volume>
+            </shadowData>
+        </graphicData>
+
+        <altitudeLayer>Item</altitudeLayer>
+        <blockWind>false</blockWind>
+        <useHitPoints>true</useHitPoints>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0</Flammability>
+        </statBases>
+        <selectable>true</selectable>
+
+        <comps>
+            <li Class="AncientThings.CompProperties_Diggable">
+                <spawnables>
+                    <li>AM_AncientSculpture</li>
+                </spawnables>
+                <defenders>
+                    <li>AM_Haymaker</li>
+                    <li>AM_Marapol</li>
+                </defenders>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
