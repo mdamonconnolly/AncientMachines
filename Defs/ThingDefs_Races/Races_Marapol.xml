@@ -111,13 +111,13 @@
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 
             <wildBiomes>
-                <BorealForest>0.2</BorealForest>
-                <Tundra>0.05</Tundra>
-                <ColdBog>0.05</ColdBog>
-                <TemperateSwamp>0.08</TemperateSwamp>
-                <TropicalSwamp>0.08</TropicalSwamp>
-                <TemperateForest>0.1</TemperateForest>
-                <AridShrubland>0.07</AridShrubland>
+                <BorealForest>0.15</BorealForest>
+                <Tundra>0.04</Tundra>
+                <ColdBog>0.03</ColdBog>
+                <TemperateSwamp>0.05</TemperateSwamp>
+                <TropicalSwamp>0.05</TropicalSwamp>
+                <TemperateForest>0.07</TemperateForest>
+                <AridShrubland>0.05</AridShrubland>
             </wildBiomes>
         </race>
 
@@ -126,6 +126,7 @@
             <ComponentIndustrial>2</ComponentIndustrial>
             <AM_AncientAnimalMeat>12</AM_AncientAnimalMeat>
             <AM_GelCore>1</AM_GelCore>
+            <AM_ChunkAncientBone>3</AM_ChunkAncientBone>
         </butcherProducts>
 
         <tradeTags>

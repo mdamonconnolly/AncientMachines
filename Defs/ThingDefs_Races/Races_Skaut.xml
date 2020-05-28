@@ -21,6 +21,12 @@
         </statBases>
 
         <!-- TODO: Add beacon/raid calling comp -->
+        <comps>
+            <li Class="AncientThings.CompProperties_Diggable">
+                <scanRange>2</scanRange>
+                <scanSpeed>3</scanSpeed>
+            </li>
+        </comps>
 
         <race>
             <herdAnimal>false</herdAnimal>
