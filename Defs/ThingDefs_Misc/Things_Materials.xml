@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
+    
     <ThingDef ParentName="UglyRockBase" Name="AncientBoneBase">
         <defName>AM_AncientBone</defName>
         <label>ancient bone</label>
@@ -18,13 +18,13 @@
             <smoothedThing>AM_SmoothedAncientBone</smoothedThing>
         </building>
     </ThingDef>
-
-    <Thingdef ParentName="AncientBoneBase">
+    
+    <ThingDef ParentName="AncientBoneBase">
         <defName>AM_SmoothedAncientBone</defName>
         <label>smoothed ancient bone</label>
         <description>Ancient bone from an old creature. The surface has been polished to a smooth dry-marble like texture.</description>
         <graphicData>
-            <texPath>Things/Building/Linked/AncientBoneSmooth_Atlas</texPath>
+            <texPath>Things/Misc/AncientBoneSmooth_Atlas</texPath>
         </graphicData>
         <statBases>
             <Beauty>2</Beauty>
@@ -34,11 +34,11 @@
             <isNaturalRock>false</isNaturalRock>
             <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
             <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-            <smoothThing />
+            <smoothedThing />
         </building>
         <saveCompressible>false</saveCompressible>
         <repairEffect>Repair</repairEffect>
-    </Thingdef>
+    </ThingDef>
 
     <ThingDef ParentName="ChunkRockBase">
         <defName>AM_ChunkAncientBone</defName>

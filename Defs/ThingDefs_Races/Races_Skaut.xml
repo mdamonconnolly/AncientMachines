@@ -22,7 +22,7 @@
 
         <!-- TODO: Add beacon/raid calling comp -->
         <comps>
-            <li Class="AncientThings.CompProperties_Diggable">
+            <li Class="AncientThings.CompProperties_Scanner">
                 <scanRange>2</scanRange>
                 <scanSpeed>3</scanSpeed>
             </li>
