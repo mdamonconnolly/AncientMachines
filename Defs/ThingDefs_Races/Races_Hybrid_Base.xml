@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef ParentName="BasePawn" Name="AM_HybridThingBase" Abstract="True">
+
+        <!-- Stat Bases -->
+        <statBases>
+            <LeatherAmount>30</LeatherAmount>
+            <MeatAmount>10</MeatAmount>
+            <ToxicSensitivity>0.7</ToxicSensitivity>
+            <PsychicSensitivity>0.3</PsychicSensitivity>
+            <Flammability>0.2</Flammability>
+            <ArmorRating_Heat>2.00</ArmorRating_Heat>
+        </statBases>
+
+        <receivesSignals>true</receivesSignals>
+
+        <race>
+            <thinkTreeMain>AM_Hybrid</thinkTreeMain> <!-- TODO: Create think tree -->
+            <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+            <needsRest>false</needsRest>
+            <hasGenders>false</hasGenders>
+            <foodType>VegetarianRoughAnimal,DendrovoreAnimal,AnimalProduct</foodType>
+            <lifeExpectancy>250</lifeExpectancy>
+            <bloodDef>Filth_MachineBits</bloodDef>
+        </race>
+
+        <comps>
+            <li Class="AncientThings.CompProperties_Scanner">
+                <scanSpeed>1</scanSpeed>
+                <scanRange>2</scanRange>
+            </li>
+            <!-- TODO: GelCore Hackable comp -->
+        </comps>
+
+        <recipes>
+            <li>RemoveBodyPart</li>
+            <li>Euthanize</li>
+            <li>Anesthetize</li>
+        </recipes>
+    </ThingDef>
+
+    <PawnKindDef Name="AM_HybridKindBase" Abstract="True">
+        <defaultFactionType>AM_Ancients</defaultFactionType>
+        <aiAvoidCover>true</aiAvoidCover>
+        <destroyGearOnDrop>true</destroyGearOnDrop>
+    </PawnKindDef>
+</Defs>

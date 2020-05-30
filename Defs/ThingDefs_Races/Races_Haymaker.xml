@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <ThingDef ParentName="BaseMechanoidWalker">
+    <ThingDef ParentName="AM_HybridThingBase">
         <defName>AM_Haymaker</defName>
         <label>haymaker</label>
         <description>Placeholder description.</description>
@@ -81,12 +81,41 @@
         <race>
             <body>AM_LightBipedalAssaulter</body>
             <baseHealthScale>1.5</baseHealthScale>
+            <trainability>Intermediate</trainability>
+
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.8</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.0</minAge>
+                    <!-- Add sounds? Wildpod as example -->
+                    <soundWounded>Pawn_Melee_BigBash_HitPawn</soundWounded>
+                    <soundDeath>Pawn_Melee_BigBash_HitPawn</soundDeath>
+                    <soundCall>Pawn_Melee_BigBash_HitPawn</soundCall>
+                    <soundAngry>Pawn_Melee_BigBash_HitPawn</soundAngry>
+                </li>
+            </lifeStageAges>
 
             <!-- Custom Sounds? -->
             <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
         </race>
+
+        <butcherProducts>
+            <Steel>80</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <AM_AncientAnimalMeat>4</AM_AncientAnimalMeat>
+            <AM_GelCore>1</AM_GelCore>
+            <AM_ChunkAncientBone>1</AM_ChunkAncientBone>
+        </butcherProducts>
     </ThingDef>
 
     <PawnKindDef ParentName="BaseMechanoidKind">
@@ -95,6 +124,28 @@
         <race>AM_Haymaker</race>
         <combatPower>100</combatPower>
         <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Haymaker</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Hybrids/Haymaker</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Hybrids/Haymaker</texPath>

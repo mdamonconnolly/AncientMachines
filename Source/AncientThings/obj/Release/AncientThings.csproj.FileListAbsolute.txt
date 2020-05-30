@@ -1,4 +1,3 @@
 D:\SteamGames\steamapps\common\RimWorld\Mods\AncientMachines\Assemblies\AncientThings.dll
 D:\SteamGames\steamapps\common\RimWorld\Mods\AncientMachines\Source\AncientThings\obj\Release\AncientThings.csproj.CoreCompileInputs.cache
 D:\SteamGames\steamapps\common\RimWorld\Mods\AncientMachines\Source\AncientThings\obj\Release\AncientThings.dll
-D:\SteamGames\steamapps\common\RimWorld\Mods\AncientMachines\Source\AncientThings\obj\Release\AncientThings.csprojAssemblyReference.cache

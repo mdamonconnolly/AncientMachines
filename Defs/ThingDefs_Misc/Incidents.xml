@@ -11,7 +11,7 @@
         </targetTags>
         <workerClass>AncientThings.IncidentWorker_StrangeChunk</workerClass>
         <baseChance>0.7</baseChance>
-        <minRefireDays>12</minRefireDays> <!-- TODO: Increase to 12 for release -->
+        <minRefireDays>12</minRefireDays>
     </IncidentDef>
 
     <IncidentDef>

@@ -3,7 +3,7 @@
 <Defs>
 
     <!-- Animalthingbase? or do i need to create a new base? -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AM_HybridThingBase">
 
         <!-- Base Details -->
         <defName>AM_Marapol</defName>
@@ -135,7 +135,7 @@
     </ThingDef>
 
     <!-- PawnKind -->
-    <PawnKindDef ParentName="AnimalKindBase">
+    <PawnKindDef ParentName="AM_HybridKindBase">
 
         <defName>AM_Marapol</defName>
         <label>marapol</label>
@@ -152,7 +152,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Hybrids/Marapol</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>5</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
                         <offset>(0, 0, -0.2)</offset>
@@ -160,14 +160,14 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Hybrids/DessicatedMarapol</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
 
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Hybrids/Marapol</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>5</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
                         <offset>(0, 0, -0.2)</offset>
@@ -175,14 +175,14 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Hybrids/DessicatedMarapol</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
 
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Hybrids/Marapol</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>5</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
                         <offset>(0, 0, -0.2)</offset>
@@ -190,7 +190,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Hybrids/DessicatedMarapol</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>

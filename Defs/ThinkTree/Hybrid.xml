@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<!-- TODO: Deviate from animal behaviour. -->
+
+<Defs>
+
+    <ThinkTreeDef>
+        <defName>AM_Hybrid</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+
+                <!-- Downed -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Downed</treeDef>
+                </li>
+
+                <!-- Queued job -->
+                <li Class="ThinkNode_QueuedJob" />
+
+                <!-- Leave if timed out -->
+                <li Class="ThinkNode_ConditionalExitTimedOut">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ExitMapRandom">
+                                    <defaultLocomotion>Walk</defaultLocomotion>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+
+                <li Class="ThinkNode_ConditionalHasFaction">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LeaveIfWrongSeason</treeDef>
+                        </li>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LeaveIfStarving</treeDef>
+                        </li>
+
+                        <!-- Wild animals randomly leave map -->
+                        <li Class="ThinkNode_ChancePerHour_Constant">
+                            <mtbDays>60</mtbDays>
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_ExitMapRandom">
+                                            <defaultLocomotion>Walk</defaultLocomotion>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+
+                <!-- Eat random things out of curiosity -->
+                <li Class="ThinkNode_ChancePerHour_Constant">
+                    <mtbDays>60</mtbDays>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>SatisfyingNeeds</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_EatRandom"/>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Satisfy basic needs -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>SatisfyBasicNeeds</treeDef>
+                </li>
+
+                <!-- Wander -->
+                <li Class="ThinkNode_Tagger">
+                    <tagToGive>Idle</tagToGive>
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalHerdAnimal">
+                            <subNodes>
+                                <li Class="JobGiver_WanderHerd">
+                                    <maxDanger>Deadly</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Deadly</maxDanger>
+                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                        </li>
+                    </subNodes>
+                </li>
+
+
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+</Defs>

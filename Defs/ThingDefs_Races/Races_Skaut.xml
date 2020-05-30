@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AM_HybridThingBase">
         
         <defName>AM_Skaut</defName>
         <label>skaut</label>
