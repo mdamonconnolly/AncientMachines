@@ -14,3 +14,6 @@ Currently it's in v0.1.95. It's playable and shouldn't generate any errors but i
 * SerpyDerpy
 * Taranchuk
 * Garthor
+
+
+Extra special thanks to Kitty14 who taught me just about everything I know about rimworld and made it a thousand times more fun for me. I hope one day you will finally find out what the f*ck barbara is doing. 
