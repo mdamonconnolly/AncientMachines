@@ -15,3 +15,6 @@ It's playable and shouldn't generate any errors but it doesn't add a massive amo
 * SerpyDerpy
 * Taranchuk
 * Garthor
+
+
+Extra special thanks to Kitty14 who taught me just about everything I know about rimworld and made it a thousand times more fun for me. I hope one day you will finally find out what the f*ck barbara is doing. 
