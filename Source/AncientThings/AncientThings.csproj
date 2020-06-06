@@ -56,12 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comps\CompDiggable.cs" />
+    <Compile Include="Comps\CompHauler.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Diggable.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Hauler.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Scanner.cs" />
     <Compile Include="Comps\CompScanner.cs" />
     <Compile Include="Incidents\IncidentWorker_LostMarapol.cs" />
     <Compile Include="Incidents\IncidentWorker_StrangeChunk.cs" />
     <Compile Include="Jobs\JobDriver_Dig.cs" />
+    <Compile Include="Jobs\JobDriver_ManageContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

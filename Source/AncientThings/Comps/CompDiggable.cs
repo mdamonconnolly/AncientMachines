@@ -96,23 +96,17 @@ namespace AncientThings
         //TODO: Set an "appearance chance" for items, and a value, so that if 2 rare items appear, there will be more hybrids.
         protected void setOutput()
         {
-            Log.Message("Calculating output of chunk...");
-
             Random rand = new Random();
             int chunkOutput = rand.Next(1, 4);
-            Log.Message("Chunk output should be: " + chunkOutput + "\nGenerating...");
 
             for(int i = 0; i < chunkOutput; ++i)
             {
-                Log.Message(i + ": ");
                 int itemChoice = rand.Next(Props.spawnables.Count);
-                Log.Message(Props.spawnables[itemChoice] + " being added to chunk...");
                 itemYield.Add(Props.spawnables[itemChoice]);
 
                 if(i >= 2)
                 {
                     int pawnChoice = rand.Next(Props.defenders.Count);
-                    Log.Message(Props.defenders[pawnChoice] + " being added to chunk...");
                     pawnYield.Add(Props.defenders[pawnChoice]);
                 }
 
@@ -121,11 +115,9 @@ namespace AncientThings
 
         public void unearth()
         {
-            Log.Message("Unearthing Chunk");
 
             for(int i = 0; i < itemYield.Count; ++i)
             {
-                Log.Message("AM_unearth: Spawning " + itemYield[i]);
                 IntVec3 itemCell;
                 CellFinder.TryFindRandomCellNear(this.parent.Position, this.parent.Map, 3, null, out itemCell, -1);
                 GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(itemYield[i]), ThingDefOf.Steel), this.parent.Position, this.parent.Map, WipeMode.FullRefund);
@@ -133,7 +125,6 @@ namespace AncientThings
 
             for(int i = 0; i < pawnYield.Count; ++i)
             {
-                Log.Message("AM_unearth: Spawning " + pawnYield[i]);
                 IntVec3 itemCell;
                 CellFinder.TryFindRandomCellNear(this.parent.Position, this.parent.Map, 3, null, out itemCell, -1);
                 PawnKindDef pawn = PawnKindDef.Named(pawnYield[i]);

@@ -8,5 +8,12 @@
         <reportString>Digging</reportString>
         <joyGainRate>0</joyGainRate>
     </JobDef>
+
+    <JobDef>
+        <defName>AM_ManageContainer</defName>
+        <driverClass>AncientThings.JobDriver_ManageContainer</driverClass>
+        <reportString>Using container</reportString>
+        <joyGainRate>0</joyGainRate>
+    </JobDef>
     
 </Defs>

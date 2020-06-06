@@ -43,7 +43,8 @@ namespace AncientThings
             pawn = PawnGenerator.GeneratePawn(marapol, null);
             GenSpawn.Spawn(pawn, location, map, Rot4.Random, WipeMode.Vanish, false);
 
-            //TODO: Fill inventory with gear. This will require custom type with inventory capacity tag.
+            //TODO: Fill inventory with random gear based on age of colony.
+            pawn.TryGetComp<CompHauler>().addToCargo(ThingMaker.MakeThing(ThingDef.Named("AM_AncientBuriedChunk")));
 
             pawn.mindState.exitMapAfterTick = (Find.TickManager.TicksGame + stayTime);
 

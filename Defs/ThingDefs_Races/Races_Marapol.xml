@@ -67,7 +67,11 @@
             </li>
         </verbs>
 
-        <!-- Do i need comps? What are comps? -->
+        <comps>
+            <li Class="AncientThings.CompProperties_Hauler">
+                <carryCapacity>80</carryCapacity>
+            </li>
+        </comps>
 
         <!-- Race -->
         <race>
