@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
-using Verse.AI;
 
 namespace AncientThings
 {
@@ -20,13 +19,11 @@ namespace AncientThings
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            
 
             Map map = (Map)parms.target;
-            IntVec3 intvec;
 
-            List<Pawn> pawns = map.mapPawns.AllPawns;
-
-            foreach(Pawn p in pawns)
+            foreach(Pawn p in map.mapPawns.AllPawns)
             {
                 //Better to conditional from thinktree or race?
                 if(p.thinker.MainThinkTree.defName == "AM_Hybrid")
@@ -35,8 +32,8 @@ namespace AncientThings
                 }
             }
 
-            Find.LetterStack.ReceiveLetter("LetterLabelHybridSignalAttack".Translate(), "LetterHybridSignalAttack".Translate(), LetterDefOf.PositiveEvent, null, null, null);
-
+            Find.LetterStack.ReceiveLetter("LetterLabelHybridSignalAttack".Translate(), "LetterHybridSignalAttack".Translate(), LetterDefOf.NegativeEvent, null, null, null);
+            
             return true;
         }
     }
