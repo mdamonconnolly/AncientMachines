@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
+    <!-- TODO: Sort out categories -->
     <IncidentDef>
         <defName>AM_Incident_StrangeChunk</defName>
         <label>strange chunk</label>
@@ -24,6 +24,18 @@
         <workerClass>AncientThings.IncidentWorker_LostMarapol</workerClass>
         <baseChance>0.5</baseChance>
         <minRefireDays>20</minRefireDays>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>AM_Incident_HybridAttackSignal</defName>
+        <label>hybrid attack signal</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>AncientThings.IncidentWorker_HybridSignal_Attack</workerClass>
+        <baseChance>0.5</baseChance>
+        <minRefireDays>14</minRefireDays>
     </IncidentDef>
 
 </Defs>

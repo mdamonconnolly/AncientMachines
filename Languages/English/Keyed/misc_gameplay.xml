@@ -7,6 +7,8 @@
     <LetterStrangeChunk>A strange chunk has been spotted sticking out of the ground!\n\nDigging this up may yeild some great resources!... Or maybe something more sinister...</LetterStrangeChunk>
     <LetterLabelLostMarapol>Lost Marapol Enters</LetterLabelLostMarapol>
     <LetterLostMarapol>An ancient marapol hybrid has wandered into the area. Being a hauler, it may still have something onboard!</LetterLostMarapol>
+    <LetterLabelHybridSignalAttack>Hybrid Attack Signal</LetterLabelHybridSignalAttack>
+    <LetterHybridSignalAttack>An ancient signal has swept through the land commanding the hybrids to commence attacks on any targets in range. For the hybrids in the area, thats you!</LetterHybridSignalAttack>
 
     <!-- tasks -->
     <AM_Dig>Dig</AM_Dig>

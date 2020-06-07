@@ -13,8 +13,8 @@
             <flyOverhead>false</flyOverhead>
             <explosionRadius>1</explosionRadius>
             <damageDef>Bomb</damageDef>
-            <damageAmountBase>10</damageAmountBase>
-            <speed>60</speed>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>80</speed>
         </projectile>
     </ThingDef>
 </Defs>

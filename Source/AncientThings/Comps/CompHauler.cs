@@ -41,8 +41,6 @@ namespace AncientThings
                 this.job_loadHauler = new Job(DefDatabase<JobDef>.GetNamed("AM_ManageContainer", true), (LocalTargetInfo)((Thing)this.parent));
             }
 
-            //TODO: Set up refusal gates.
-
             Action action = (Action)(() =>
             {
                 pawn.jobs.StopAll();
