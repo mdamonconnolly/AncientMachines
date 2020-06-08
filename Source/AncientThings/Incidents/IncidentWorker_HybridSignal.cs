@@ -37,38 +37,4 @@ namespace AncientThings
             return true;
         }
     }
-
-    //All hauler hybrids in map collect any pickupable items
-    class IncidentWorker_HybridSignal_Collect : IncidentWorker
-    {
-
-        protected override bool CanFireNowSub(IncidentParms parms)
-        {
-            return base.CanFireNowSub(parms);
-        }
-
-
-        protected override bool TryExecuteWorker(IncidentParms parms)
-        {
-            return true;
-        }
-
-    }
-
-    //All hybrids that eat, will eat everything in map
-    class IncidentWorker_HybridSignal_Devour : IncidentWorker
-    {
-
-        protected override bool CanFireNowSub(IncidentParms parms)
-        {
-            return base.CanFireNowSub(parms);
-        }
-
-
-        protected override bool TryExecuteWorker(IncidentParms parms)
-        {
-            return true;
-        }
-
-    }
 }

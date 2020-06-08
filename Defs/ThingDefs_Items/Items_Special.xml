@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="ArtifactBase"> <!-- Custom base? -->
+        <defName>AM_HybridTether</defName>
+        <label>hybrid tethering device </label>
+        <description>A one-use tool that will recalibrate a targetted hyrbids gel-core, effectively taming the hybrid.</description>
+        <graphicData>
+            <texPath>Things/Items/HybridTether</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>1</stackLimit>
+        <tradeNeverStack>true</tradeNeverStack>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>750</MarketValue>
+            <MaxHitPoints>60</MaxHitPoints>
+        </statBases>
+        <drawGUIOverlay>false</drawGUIOverlay>
+
+        <comps>
+            <!-- Will probably need to recreate a custom version of this for hybrid targetting. -->
+            <li Class="CompProperties_Targetable">
+                <compClass>CompTargetable_SinglePawn</compClass>
+                <psychicSensitiveTargetsOnly>false</psychicSensitiveTargetsOnly>
+                <nonDownedPawnOnly>true</nonDownedPawnOnly>
+                <moteOnTarget>Mote_PsycastPsychicEffect</moteOnTarget>
+                <moteConnecting>Mote_PsycastPsychicLine</moteConnecting>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
