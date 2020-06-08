@@ -57,8 +57,10 @@
   <ItemGroup>
     <Compile Include="Comps\CompDiggable.cs" />
     <Compile Include="Comps\CompHauler.cs" />
+    <Compile Include="Comps\CompHybridTether.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Diggable.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Hauler.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_HybridTether.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Scanner.cs" />
     <Compile Include="Comps\CompScanner.cs" />
     <Compile Include="Incidents\IncidentWorker_HybridSignal.cs" />

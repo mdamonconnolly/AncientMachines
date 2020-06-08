@@ -29,6 +29,8 @@
                 <moteOnTarget>Mote_PsycastPsychicEffect</moteOnTarget>
                 <moteConnecting>Mote_PsycastPsychicLine</moteConnecting>
             </li>
+
+            <li Class="AncientThings.CompProperties_HybridTether" />
         </comps>
     </ThingDef>
 
