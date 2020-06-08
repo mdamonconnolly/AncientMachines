@@ -34,6 +34,7 @@
             <li Class="AncientThings.CompProperties_Diggable">
                 <spawnables>
                     <li>AM_AncientSculpture</li>
+                    <li>AM_HybridTether</li>
                 </spawnables>
                 <defenders>
                     <li>AM_Haymaker</li>

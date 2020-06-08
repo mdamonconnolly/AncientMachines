@@ -97,7 +97,7 @@ namespace AncientThings
         protected void setOutput()
         {
             Random rand = new Random();
-            int chunkOutput = rand.Next(1, 4);
+            int chunkOutput = rand.Next(1, 5);
 
             for(int i = 0; i < chunkOutput; ++i)
             {
@@ -116,19 +116,21 @@ namespace AncientThings
         public void unearth()
         {
 
-            for(int i = 0; i < itemYield.Count; ++i)
+            foreach(string itItem in itemYield)
             {
                 IntVec3 itemCell;
                 CellFinder.TryFindRandomCellNear(this.parent.Position, this.parent.Map, 3, null, out itemCell, -1);
-                GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(itemYield[i]), ThingDefOf.Steel), this.parent.Position, this.parent.Map, WipeMode.FullRefund);
+                GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(itItem), ThingDefOf.Steel), this.parent.Position, this.parent.Map, WipeMode.FullRefund);
             }
 
-            for(int i = 0; i < pawnYield.Count; ++i)
+            foreach(string itPawn in pawnYield)
             {
                 IntVec3 itemCell;
                 CellFinder.TryFindRandomCellNear(this.parent.Position, this.parent.Map, 3, null, out itemCell, -1);
-                PawnKindDef pawn = PawnKindDef.Named(pawnYield[i]);
-                GenSpawn.Spawn(PawnGenerator.GeneratePawn(pawn, null), this.parent.Position, this.parent.Map, Rot4.Random, WipeMode.Vanish, false);
+                PawnKindDef pawn = PawnKindDef.Named(itPawn);
+                Pawn outPawn = PawnGenerator.GeneratePawn(pawn, null);
+                GenSpawn.Spawn(outPawn, this.parent.Position, this.parent.Map, Rot4.Random, WipeMode.Vanish, false);
+                outPawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, forceWake : true);
             }
 
             this.parent.DeSpawn(DestroyMode.Deconstruct);

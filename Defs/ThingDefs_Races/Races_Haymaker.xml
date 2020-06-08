@@ -67,7 +67,7 @@
                 <accuracyLong>1</accuracyLong>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>AM_EmbergasProjectile</defaultProjectile>
-                <warmupTime>0.45</warmupTime>
+                <warmupTime>3</warmupTime>
                 <burstShotCount>2</burstShotCount>
                 <forcedMissRadius>2</forcedMissRadius>
                 <minRange>2</minRange>

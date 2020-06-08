@@ -30,7 +30,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>23</power>
+                <power>16</power>
                 <cooldownTime>2.0</cooldownTime>
                 <linkedBodyPartsGroup>AM_HoofAttackTool</linkedBodyPartsGroup>
             </li>
@@ -40,7 +40,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>23</power>
+                <power>16</power>
                 <cooldownTime>2.0</cooldownTime>
                 <linkedBodyPartsGroup>AM_HoofAttackTool</linkedBodyPartsGroup>
             </li>
@@ -63,7 +63,7 @@
                 <forcedMissRadius>2</forcedMissRadius>
                 <soundCast>A</soundCast>
                 <muzzleFlashScale>1</muzzleFlashScale>
-                <commonality>1.2</commonality>
+                <commonality>1</commonality>
             </li>
         </verbs>
 
