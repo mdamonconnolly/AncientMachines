@@ -6,7 +6,7 @@
 <Defs>
 
     <ThinkTreeDef>
-        <defName>AM_Hybrid</defName>
+        <defName>AM_Droid</defName>
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
 
@@ -58,12 +58,6 @@
                 <li Class="ThinkNode_ConditionalHasFaction">
                     <invert>true</invert>
                     <subNodes>
-                        <li Class="ThinkNode_Subtree">
-                            <treeDef>LeaveIfWrongSeason</treeDef>
-                        </li>
-                        <li Class="ThinkNode_Subtree">
-                            <treeDef>LeaveIfStarving</treeDef>
-                        </li>
 
                         <!-- Wild animals randomly leave map -->
                         <li Class="ThinkNode_ChancePerHour_Constant">
@@ -82,21 +76,7 @@
                     </subNodes>
                 </li>
 
-
-                <!-- Eat random things out of curiosity -->
-                <li Class="ThinkNode_ChancePerHour_Constant">
-                    <mtbDays>60</mtbDays>
-                    <subNodes>
-                        <li Class="ThinkNode_Tagger">
-                            <tagToGive>SatisfyingNeeds</tagToGive>
-                            <subNodes>
-                                <li Class="JobGiver_EatRandom"/>
-                            </subNodes>
-                        </li>
-                    </subNodes>
-                </li>
-
-                <!-- Satisfy basic needs -->
+                <!-- TODO: Satisfying basic needs applicable to droid?-->
                 <li Class="ThinkNode_Subtree">
                     <treeDef>SatisfyBasicNeeds</treeDef>
                 </li>
