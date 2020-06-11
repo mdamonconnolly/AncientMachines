@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef ParentName="LeatherBase">
+        <defName>AM_LeatherAncient</defName>
+        <label>ancient leather</label>
+        <graphicData>
+            <color>(79, 64, 55)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(79, 64, 55)</color>
+            <commonality>0.001</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>AM_LeatherAncientOrgans</defName>
+        <label>ancient organ leather</label>
+        <graphicData>
+            <color>(212, 156, 152)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(212, 156, 152)</color>
+            <commonality>0.001</commonality>
+        </stuffProps>
+    </ThingDef>
+</Defs>
