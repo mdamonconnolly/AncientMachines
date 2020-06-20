@@ -2,6 +2,15 @@
 
 <Defs>
 
+    <!-- Keep the category here for cleanliness -->
+    <ThingCategoryDef>
+        <defName>AM_TabletPieces</defName>
+        <label>tablet pieces</label>
+        <parent>Root</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <!--<iconPath></iconPath>-->
+    </ThingCategoryDef>
+
     <!-- TODO: Custom piece that can cover all historical pieces, not just tablets? -->
     <ThingDef ParentName="BuildingBase" Name="AM_TabletBase" Abstract="True">
         <thingClass>Building_Art</thingClass>
@@ -57,10 +66,36 @@
             <Flammability>0.2</Flammability>
             <DeteriorationRate>0.3</DeteriorationRate>
         </statBases>
+        <thingCategories>
+            <li>AM_TabletPieces</li>
+        </thingCategories>
         <intricate>false</intricate>
     </ThingDef>
 
 
     <!-- Tablet here when textures done. -->
+    <ThingDef ParentName="AM_TabletBase">
+        <defName>AM_AncientTablet</defName>
+        <label>ancient tablet</label>
+        <description>A stone tablet with information from a time past.</description>
+        <castEdgeShadows>true</castEdgeShadows>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Items/Tablet</texPath>
+            <drawSize>(1.5, 1.5)</drawSize>
+        </graphicData>
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+
+        <statBases>
+            <MaxHitPoints>175</MaxHitPoints>
+            <Mass>4</Mass>
+            <Beauty>80</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>50</costStuffCount>
+    </ThingDef>
 
 </Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <RecipeDef ParentName="MakeStoneBlocksBase">
+        <defName>AM_MakeAncientTablet</defName>
+        <label>make ancient tablet out of pieces</label>
+        <description>piece together a tablet to yield insight.</description>
+        <workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                    <li>AM_TabletPieces</li>
+                    </categories>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>AM_TabletPieces</li>
+            </categories>
+        </fixedIngredientFilter>
+        <specialProducts>
+            <li>Butchery</li>
+        </specialProducts>
+    </RecipeDef>
+</Defs>
