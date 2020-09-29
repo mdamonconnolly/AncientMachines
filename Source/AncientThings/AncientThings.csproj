@@ -63,6 +63,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_HybridTether.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Scanner.cs" />
     <Compile Include="Comps\CompScanner.cs" />
+    <Compile Include="Incidents\IncidentWorker_HybridAssault.cs" />
     <Compile Include="Incidents\IncidentWorker_HybridSignal.cs" />
     <Compile Include="Incidents\IncidentWorker_LostMarapol.cs" />
     <Compile Include="Incidents\IncidentWorker_StrangeChunk.cs" />
